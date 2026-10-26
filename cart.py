@@ -5,9 +5,6 @@ class Cart:
     def add_item(self, name, price):
         self.cart_items.append([name, price])
 
-    def __str__(self):
-        return self.cart_items
-
     def __len__(self):
         return len(self.cart_items)
 
