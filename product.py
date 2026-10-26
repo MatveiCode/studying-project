@@ -4,6 +4,20 @@ class Product:
         self.name = name
         self.price = price
 
+    @property
+    def price(self):
+        return self._price
+
+    @price.setter
+    def price(self, value):
+        if value < 0:
+            raise ValueError("Цена не может быть отрицательной")
+        self._price = value
+
+    @property
+    def price_with_vat(self):
+        return self._price + (self.price / 5)
+
     def __str__(self):
         return f"{self.name} - {self.price}{self.currency}"
 
