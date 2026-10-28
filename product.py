@@ -29,7 +29,7 @@ class Product:
         return self.name == other.name and self.price == other.price
 
     @staticmethod
-    def is_valid_name(name):
+    def is_valid_name( name):
         return 0 < len(name) <= 50
 
     @classmethod
