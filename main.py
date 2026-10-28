@@ -1,4 +1,10 @@
-from product import Product
+import logging
 
-pizza_peperoni = Product("пицца", 650)
-print(int(pizza_peperoni.price_with_vat))
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+    filename="shop.log",
+    encoding="utf-8",
+)
+
+logger = logging.getLogger(__name__)
