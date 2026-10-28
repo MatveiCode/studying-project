@@ -16,5 +16,5 @@ class Cart:
         total = 0
         for item in self.cart_items:
             total += item[1]
-        logger.debug("в корзине %s элементов", total)
+        logger.debug("общая цена корзины - %s", total)
         return total
