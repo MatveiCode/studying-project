@@ -37,7 +37,7 @@ class Product:
         return cls(name, int(price))
 
     def return_info(self):
-        return "{self.name};{self.price}"
+        return f"{self.name};{self.price}"
 
 if __name__ == "__main__":
     pizza_peperoni = Product("пицца", 650)
